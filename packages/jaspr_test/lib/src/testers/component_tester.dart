@@ -183,4 +183,7 @@ class TestDomBuilder extends DomBuilder {
   void removeChild(DomNode parent, DomNode child) {
     parent.testData.children.remove(child);
   }
+  
+  @override
+  void skipContent(DomNode node) {}
 }
