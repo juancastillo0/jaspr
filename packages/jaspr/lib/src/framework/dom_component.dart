@@ -23,7 +23,7 @@ class DomComponent extends Component {
   final String tag;
   final String? id;
   final List<String>? classes;
-  final Map<String, String>? styles;
+  final Styles? styles;
   final Map<String, String>? attributes;
   final Map<String, EventCallback>? events;
   final Component? _child;
@@ -64,7 +64,7 @@ class DomElement extends MultiChildElement with DomNode {
       component.tag,
       component.id,
       component.classes,
-      component.styles,
+      component.styles?.styles,
       component.attributes,
       component.events,
     );
